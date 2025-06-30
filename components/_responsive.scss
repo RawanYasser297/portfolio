@@ -1,0 +1,125 @@
+
+/* responsive */
+@media (max-width: 1000px) {
+  html {
+    font-size: 8px;
+  }
+
+}
+
+@media (max-width: 800px) {
+  .bio__photo__container {
+    display: none;
+  }
+  
+
+  .section {
+    row-gap: 8rem;
+    grid-template-columns: 1fr;
+  }
+
+  .bio__photo__container {
+    grid-row: 1;
+    justify-self: center;
+    margin-bottom: 4rem;
+  }
+
+  .skills__list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pro {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .pros_p {
+    width: 90%;
+  }
+
+  .pro.two .pro__content {
+    order: 2;
+  }
+
+  .clientsOpinion {
+    font-size: var(--font-size-24);
+  }
+
+  .form {
+    order: -1;
+  }
+}
+
+@media (max-width: 500px) {
+  
+
+  .pro__img {
+    width: 90%;
+  }
+  .nav-bar {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    z-index: -100;
+    background-color: var(--color-background);
+    height: 100%;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* burger menu */
+  .burger-menu {
+    display: flex;
+    
+  }
+
+  .burger-menu input#checkbox-burger-menu {
+    display: none;
+  }
+
+  .burger-menu-label {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .burger-menu-line {
+    transition: var(--transition-timing);
+    width: 3rem;
+    height: 0.3rem;
+    background-color: var(--color-text);
+  }
+
+  header:has(.burger-menu #checkbox-burger-menu:checked)
+    .burger-menu-line:first-child {
+    transform: translateY(10px) rotate(40deg);
+  }
+
+  header:has(.burger-menu #checkbox-burger-menu:checked)
+    .burger-menu-line:nth-child(2) {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  header:has(.burger-menu #checkbox-burger-menu:checked)
+    .burger-menu-line:last-child {
+    transform: rotate(-40deg);
+  }
+
+  header:has(.burger-menu #checkbox-burger-menu:checked) .burger-menu {
+    transform: translateY(-6px);
+  }
+
+  /* burger menu end*/
+
+  /* mobile nav */
+  header:has(.burger-menu #checkbox-burger-menu:checked) .nav-bar{
+  top: 100%;
+
+  }
+  /* mobile nav end*/
+}
+/* responsive end */

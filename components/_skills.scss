@@ -1,0 +1,38 @@
+/* skills */
+
+.skills__list {
+  display: grid;
+  gap: 6rem;
+  grid-template-columns: repeat(3, 1fr);
+  color: var(--color-text);
+}
+
+.skills__list--child {
+  width: fit-content;
+  font-size: var(--font-size-38);
+}
+
+.skills__list--child:nth-child(1):after,
+.skills__list--child:nth-child(2):after,
+.skills__list--child:nth-child(3):after {
+  content: "2 years";
+  display: block;
+  margin-top: 5px;
+  font-size: 1.5rem;
+}
+
+.skills__list--child:nth-child(4):after,
+.skills__list--child:nth-child(5):after,
+.skills__list--child:nth-child(6):after {
+  content: "1 years";
+  display: block;
+  margin-top: 5px;
+  font-size: 1.5rem;
+}
+
+.skills__list--child:hover {
+  user-select: none;
+  text-shadow: 0 0 3px var(--color-dark-green);
+  /* user-select: none; */
+}
+/* skills end */

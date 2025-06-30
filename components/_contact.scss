@@ -1,0 +1,126 @@
+@import './mixin';
+
+
+/* contact */
+
+.contact {
+  gap: 25rem;
+  grid-template-columns: 1fr 1fr;
+}
+.social-media-list {
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start;
+  padding: 15px 5px;
+}
+
+.social-link {
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: var(--transition-timing);
+}
+
+.social-link:hover {
+  transform: scale(1.5);
+}
+
+.social-link.one {
+  background-image: url(../images/facebook-brands.svg);
+  background-repeat: no-repeat;
+}
+
+.social-link.two {
+  background-image: url(../images/twitter-brands-solid.svg);
+  background-repeat: no-repeat;
+}
+.social-link.three {
+  background-image: url(../images/youtube-brands-solid.svg);
+
+  background-repeat: no-repeat;
+}
+
+.social-link.four {
+  background-image: url(../images/instagram-brands-solid.svg);
+  background-repeat: no-repeat;
+}
+
+.social-link.five {
+  background-image: url(../images/github-brands.svg);
+
+  background-repeat: no-repeat;
+}
+
+.social-link.six {
+  background-image: url(../images/linkedin-brands.svg);
+
+  background-repeat: no-repeat;
+}
+
+.h2__form {
+  text-transform: capitalize;
+  margin-bottom: 5rem;
+}
+
+.form-inputs {
+  flex: 1;
+  outline: none;
+  border: none;
+  border-bottom: solid 0.1rem #838282;
+  background-color: transparent;
+  padding: 0.1rem;
+  margin-bottom: 4rem;
+}
+
+textarea.form-inputs {
+  flex-basis: 100%;
+}
+
+/* .form-inputs:focus{
+   border: none;
+  border-bottom: solid 0.1rem #838282;
+  background-color: transparent;
+  padding: 0.1rem;
+} */
+
+.form {
+   @include displayFlex($gap:1rem)
+  // display: flex;
+  // flex-direction: column;
+  // align-items: flex-start;
+  // justify-content: center;
+  // gap: 1rem;
+}
+
+.contact__form {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.send-msg {
+  cursor: pointer;
+  padding: 1.5rem;
+}
+
+.section-about-me {
+  // display: flex;
+  // flex-direction: column;
+  // align-items: flex-start;
+  // gap: 2rem;
+  // justify-content: center;
+  @include displayFlex($gap:2rem)
+}
+
+.section-about-me-p {
+  padding: 2rem 2rem 2rem 0rem;
+  line-height: 3rem;
+  font-weight: var(--font-weight-medium);
+  text-transform: capitalize;
+}
+
+.gmail {
+  font-weight: var(--font-weight-semi-bold);
+}
+
+/* contact end */

@@ -1,0 +1,42 @@
+html{
+  font-size: 10px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 8rem;
+   overflow-x:hidden
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+input {
+  border: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
